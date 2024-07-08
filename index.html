@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1><b>Interactive Quiz Application</b></h1>
+    <div class="quiz-container">
+        <div class="question-container">
+            <p id="question-text"></p>
+            <ul id="options-list">
+                <li><input type="radio" id="option1" name="option"><label for="option1"></label></li>
+                <li><input type="radio" id="option2" name="option"><label for="option2"></label></li>
+                <li><input type="radio" id="option3" name="option"><label for="option3"></label></li>
+                <li><input type="radio" id="option4" name="option"><label for="option4"></label></li>
+            </ul>
+            <button id="submit-btn">Submit</button>
+            <button id="next-btn" style="display: none;">Next Question</button>
+            <p id="error-message" style="display: none; color: red;"></p>
+        </div>
+        <div class="result-container">
+            <p id="result-text"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
